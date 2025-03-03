@@ -3,32 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registraion form</title>
+    <title>Registration Form</title>
+    <style>
+        body
+        {
+            background-color:#c5c6c7
+            
+        }
+        .a
+        {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            text-align: center;
+            background-color: white
+        }
+        .b
+        {
+            background-color: #007bff;
+            font-size: large;
+            color: red;
+            width: max-content;
+            height: max-content;
+        }
+        .b:hover
+        {
+            border-radius: 15px;
+            background-color: yellowgreen;
+        }
+        .c
+        {
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
 </head>
-<body>
+<body >
+    <center><h1 >Registration Form</h1></center>
     <form action="login.html">
-        <table > 
-            <tr>
-                <td>First Name</td>
+        <table border="3" cellpadding="10" align="center">
+            <tr class="a">
+                <td class="a">First Name :</td>
                 <td><input type="text" maxlength="10" required></td>
             </tr>
-            <tr>
-                <td>Last name</td>
-                <td> <input type="text" name="lname" id="lname" maxlength="10"></td>
+            <tr class="a">
+                <td class="a">Last Name :</td>
+                <td><input type="text" name="lname" id="lname" maxlength="10" required></td>
             </tr>
-            <tr>
-                <td>Mobile no:</td>
-                <td> <input type="text" name="monile" id="mobile" pattern="[0-9]{ten}"></td>
+            <tr class="a">
+                <td class="a">Mobile No :</td>
+                <td><input type="text" name="mobile" id="mobile" pattern="[0-9]{10}" required></td>
             </tr>
-            <tr>
-                <td>Gender</td>
-                <td><input type="radio" name="Gender" id="male">Male <input type="radio" name="gender" id="female">Female</td>
+            <tr class="a">
+                <td class="a">Gender :</td>
+                <td><input type="radio" name="Gender" value="Male">Male <input type="radio" name="Gender" value="Female">Female</td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
+            <tr class="a">
+                <td class="a">Password :</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr class="a">
+                <td class="a">Confirm Password :</td>
+                <td><input type="password" name="confirm_password" required></td>
+            </tr>
+            <tr class="a">
+                <td colspan="2" align="center">
+                    <button type="submit" class="b">Submit</button> &nbsp; &nbsp; 
+                    <input type="reset" name="reset" value="Clear" class="b"> &nbsp; &nbsp;
+                    <button type="submit" value="Login" class="b">Login</button> &nbsp; &nbsp;
+                    <button type="button" onclick="alert('HELLO WORLD!')" class="b">Alert Button</button>
+                </td>
             </tr>
         </table>
+        <div align="center" class="c">
+            <p>Already have an account! <a href="login.html">Sign in</a></p>
+        </div>
     </form>
 </body>
 </html>
