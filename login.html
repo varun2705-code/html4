@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn
+        {
+            background-color: blue;
+            width=35px;
+            font-size:25px;
+            color:pink;
+            font-family: consolas;
+
+        }
+        .btn:hover
+        {
+            background-color: brown;
+            border-radius:50px;
+        }
+        .v
+        {
+            background-color: #cbc0d3;
+            border: 3px double black;
+            width: 40%;
+            height: 250px;
+            font-size: 25px;
+            margin-top: 100px;
+        }
+       .va
+       {
+        background-color: #efd3d7;
+       }
+    </style>
+</head>
+<body class="va">
+    <form action="success.html" method="post">
+        <table class="v" align="center">
+            <tr >
+                <td colspan="2" align="center" style="font-size: 30px; font-family: 'Times New Roman', Times, serif;"> Login form</td>
+            </tr>
+            <tr >
+
+                <td>Enter email/mobile no:</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr >
+                <td>Password</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><input type="button" value="Submit" class="btn">&nbsp; &nbsp; &nbsp; &nbsp;<input type="button" value="Clear" class="btn"></td>
+                
+            </tr>
+        </table>
+    </form>
+        <p align="center" style="font-size: 30px;">don't have an account? <a href="">Signup</a></p>    
+</body>
+</html>
